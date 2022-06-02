@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc $CFILE -c -o ./${CFILE//.c/.O}
+gcc $CFILE -c -o ./${CFILE//.c/.o}
