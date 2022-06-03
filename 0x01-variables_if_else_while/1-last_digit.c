@@ -2,13 +2,13 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main
+ * main - Entry point
  *
- * Return
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	int n,s;
+	int n, s;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
@@ -27,4 +27,3 @@ int main(void)
 	}
 	return (0);
 }
-	
