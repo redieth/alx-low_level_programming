@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  *
- * Retrun: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -12,7 +12,7 @@ int main(void)
 	while (a <= 56)
 	{
 		b = a + 1;
-		while ( b <= 57)
+		while (b <= 57)
 		{
 			putchar(a);
 			putchar(b);
