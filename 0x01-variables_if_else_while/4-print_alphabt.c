@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Entry 
+ * main - Entry point
  *
  * Return: Always 0
  */
@@ -11,7 +11,7 @@ int main(void)
 	x = 97;
 	while (x <= 122)
 	{
-		if(x != 101 && x != 103)
+		if (x != 101 && x != 113)
 		{
 			putchar(x);
 		}
