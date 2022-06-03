@@ -6,19 +6,19 @@
  */
 int main(void)
 {
-	int a, b;
+	int a;
 	
 	a = 48;
-	b = 97;
 	while (a <= 57)
 	{
 		putchar(a);
 		a++;
 	}
-	while (b <= 102)
+	a = 97;
+	while (a <= 102)
 	{
-		putchar(b);
-		b++;
+		putchar(a);
+		a++;
 	}
 	putchar('\n');
 	return (0);
