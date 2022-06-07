@@ -19,7 +19,7 @@ int main(void)
 			sum += m3;
 			m3 += 3;
 		}
-		if (m5 < lim && (m5 % 3) !=)
+		if (m5 < lim && (m5 % 3) != 0)
 		{
 			sum += m5;
 			m5 += 5;
