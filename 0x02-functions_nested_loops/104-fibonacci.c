@@ -6,6 +6,7 @@
  */
 int main(void)
 {
+	unsigned long int i;
 	unsigned long int t1 = 1;
 	unsigned long int t2 = 2;
 	unsigned long int nextTerm = t1 + t2;
