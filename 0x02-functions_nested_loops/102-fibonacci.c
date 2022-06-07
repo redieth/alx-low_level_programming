@@ -14,6 +14,10 @@ int main(void)
 	printf("%lu, %lu, ", t1, t2);
 	for (i = 3; i <= 50; i++)
 	{
+		if (i == 50)
+		{
+			printf("%lu", nextTerm);
+		}
 		printf("%lu, ", nextTerm);
 		t1 = t2;
 		t2 = nextTerm;
