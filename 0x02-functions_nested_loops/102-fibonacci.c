@@ -26,5 +26,6 @@ int main(void)
 		t2 = nextTerm;
 		nextTerm = t1 + t2;
 	}
+	prinf("\n");
 	return (0);
 }
