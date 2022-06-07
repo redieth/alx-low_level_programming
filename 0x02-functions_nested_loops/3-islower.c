@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * islower - checks if a charchter passed is lowercase
+ *_islower - checks if a charchter passed is lowercase
+ * @c: alphabet being checked
  *
- * Return : Always 0 or 1
+ * Return: Always 0 (Success)
  */ 
 int _islower(int c)
 {
