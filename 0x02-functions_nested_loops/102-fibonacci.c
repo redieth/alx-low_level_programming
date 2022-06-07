@@ -18,7 +18,10 @@ int main(void)
 		{
 			printf("%lu", nextTerm);
 		}
-		printf("%lu, ", nextTerm);
+		else
+		{
+			printf("%lu, ", nextTerm);
+		}
 		t1 = t2;
 		t2 = nextTerm;
 		nextTerm = t1 + t2;
