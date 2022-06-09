@@ -2,11 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int _putchar(char c);
-
 /**
  * print_number - like a hello world
+ *
  * @n: params an integer
+ *
  * Return: void
  */
 void print_number(int n)
@@ -26,6 +26,6 @@ void print_number(int n)
 	{
 		print_number(n1 / 10);
 	}
-
+	
 	_putchar((n1 % 10) + '0');
 }
