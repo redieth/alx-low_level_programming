@@ -1,9 +1,10 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
- * more_numbers - print numbers between 0 - 14 ten times 
+ * more_numbers - Print numbers between 0 to 14 incl. 
  *
- * Return: void
+ * Return: Void.
  */
 void more_numbers(void)
 {
@@ -20,6 +21,6 @@ void more_numbers(void)
 			}
 			_putchar(j % 10 + '0');
 		}
-		_putchar('\n');
+	_putchar('\n');
 	}
 }
