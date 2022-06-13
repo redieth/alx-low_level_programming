@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _puts - rints a string, followed by a new line, to stdout
- * @str: the string
- *
- * Return: void 
+ * _puts - prints string
+ * @str: input string
+ * Return: no return
  */
+
 void _puts(char *str)
 {
 	while (*str != '\0')
