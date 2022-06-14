@@ -18,8 +18,7 @@ void puts_half(char *str)
 	{
 		n = (len - 1) / 2;
 		n++;
-	}
-	else
+	}else
 	{
 		n = len / 2;
 	}
