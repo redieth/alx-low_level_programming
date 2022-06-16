@@ -6,7 +6,7 @@
  * @n: most number of characters to concatenate
  * Return: char *
  */
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src)
 {
 	int i;
 	int j;
