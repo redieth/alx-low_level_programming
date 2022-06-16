@@ -3,6 +3,7 @@
  * _strncpy - copies two strings
  * @dest: string
  * @src: string
+ * @n: number of charachters
  * Return: string
  */
 char *_strncpy(char *dest, char *src, int n)
@@ -13,11 +14,6 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		dest[i] = src[i];
 	}
-
-	for ( ; i < n; i++)
-	{
-		dest[i] = '\0';
-	}
-
+	
 	return (dest);
 }
