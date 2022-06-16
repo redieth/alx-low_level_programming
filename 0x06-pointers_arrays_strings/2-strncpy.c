@@ -4,7 +4,7 @@
  * @dest: string
  * @src: string
  * @n: number of charachters
- * Return: string
+ * Return: *dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
