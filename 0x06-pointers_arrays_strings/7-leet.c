@@ -4,7 +4,7 @@
  * @s: parameter
  * Return: char*
  */
-char *leet(char *)
+char *leet(char *s)
 {
 	int i;
 	int j;
