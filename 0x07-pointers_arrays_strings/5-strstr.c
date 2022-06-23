@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _strstr - find first occurence of substring
- * @heystack: string 
+ * @haystack: string 
  * @needle: string
  * Return: A pointer
  */
