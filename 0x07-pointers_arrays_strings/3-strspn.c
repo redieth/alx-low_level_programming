@@ -40,8 +40,7 @@ unsigned int _strspn(char *s, char *accept)
 
 		if (!found_match)
 			break;
-		else
-			initial_length++;
+		initial_length++;
 	}
 
 	return (initial_length);
