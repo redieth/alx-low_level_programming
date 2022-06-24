@@ -16,8 +16,8 @@ void print_diagsums(int *a, int size)
 	for (i = 0; i < size; i++)
 	{
 		p = p + (size - 1);
-		sumRL = sumRL + *(a + (4 * i));
-		sumLR = sumLR + *(a + p);
+		sumRL += *(a + (4 * i));
+		sumLR += *(a + p);
 	}
 
 	printf("%d, ", sumRL);
