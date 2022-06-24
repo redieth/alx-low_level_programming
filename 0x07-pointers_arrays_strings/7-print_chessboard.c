@@ -13,26 +13,26 @@ void print_chessboard(char (*a)[8])
 	{
 		for (j = 0; j < 8; j++)
 		{
-			printf("%c", a[i][j]);
+			_putchar(a[i][j]);
 		}
-		printf("\n");
+		_putchar('\n');
 	}
 
 	for (i = 0; i < 4; i++)
 	{
 		for (j = 0; j < 8; j++)
 		{
-			printf(" ");
+			_putchar(' ');
 		}
-		printf("\n");
+		_putchar('\n');
 	}
 
 	for (i = 6; i < 8; i++)
 	{
 		for (j = 0; j < 8; j++)
 		{
-			printf("%c", a[i][j]);
+			_putchar(a[i][j]);
 		}
-		printf("\n");
+		_putchar('\n');
 	}
 }
