@@ -19,4 +19,6 @@ void print_diagsums(int *a, int size);
 
 int _putchar(char c);
 
+void set_string(char **s, char *to);
+
 #endif
