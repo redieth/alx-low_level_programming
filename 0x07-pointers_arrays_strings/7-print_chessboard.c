@@ -7,11 +7,11 @@
 void print_chessboard(char (*a)[8])
 {
 
-	int i,j;
+	int i, j;
 
 	for (i = 0; i < 2; i++)
 	{
-		for(j = 0; j < 8; j++)
+		for (j = 0; j < 8; j++)
 		{
 			printf("%c", a[i][j]);
 		}
@@ -20,7 +20,7 @@ void print_chessboard(char (*a)[8])
 
 	for (i = 0; i < 4; i++)
 	{
-		for(j = 0; j < 8; j++)
+		for (j = 0; j < 8; j++)
 		{
 			printf(" ");
 		}
@@ -29,7 +29,7 @@ void print_chessboard(char (*a)[8])
 
 	for (i = 6; i < 8; i++)
 	{
-		for(j = 0; j < 8; j++)
+		for (j = 0; j < 8; j++)
 		{
 			printf("%c", a[i][j]);
 		}
