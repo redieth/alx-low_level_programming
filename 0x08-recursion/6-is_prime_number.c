@@ -5,7 +5,7 @@
  * @i: the divisor
  * Return: 1 if prime 0 is not prime
  */
-int helper(int num, int i)
+int primeHelper(int num, int i)
 {
 	if (i < num)
 	{
