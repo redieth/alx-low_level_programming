@@ -21,7 +21,7 @@ int _strlen_recursion(char *s)
  * Return: int
  */
 
-int isPalRec(char str[],int s, int e)
+int isPalRec(char str[], int s, int e)
 {
 	if (s == e)
 		return (1);
