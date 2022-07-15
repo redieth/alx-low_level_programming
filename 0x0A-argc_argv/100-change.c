@@ -19,6 +19,11 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 	value = atoi(argv[1]);
+	if (value < 0)
+	{
+		printf("%d\n", 0);
+		return (0);
+	}
 	if (value % 25 >= 0)
 	{
 		c += value / 25;
