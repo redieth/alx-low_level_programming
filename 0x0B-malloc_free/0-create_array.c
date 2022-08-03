@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
-/*
- * *create_array - creates an array with a specified size.
+/**
+ * create_array - create array
  * @size: size
  * @c: constant
  * Return: char pointer
