@@ -2,22 +2,6 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * _strlen - length of a string
- * @s: input char
- * Return: length of a string
- */
-int _strlen(char *s)
-{
-	int l = 0;
-
-	while (*s != '\0')
-	{
-		s++;
-		l++;
-	}
-	return (l);
-}
-/**
  * argstostr - concatenates all the arguments of your program
  * @ac: counts
  * @av: arguments
@@ -25,38 +9,34 @@ int _strlen(char *s)
  */
 char *argstostr(int ac, char **av)
 {
-	int i, j, k;
-	int len, R = 0;
-	char *p;
+	int i, n, k = 0, len = 0;
+	char *str;
 
-	if (!ac || !av)
-	{
+	if (ac == 0 || av == NULL)
 		return (NULL);
-	}
-	R = 0;
 
 	for (i = 0; i < ac; i++)
 	{
-		len = _strlen(av[i]) + 1;
-		R += len;
+		for (n = 0; av[i][n]; n++)
+			len++;
 	}
-	p = malloc(sizeof(char) * R + 1);
+	len += ac;
 
-	if (!p)
-	{
+	str = malloc(sizeof(char) * len + 1);
+	if (str == NULL)
 		return (NULL);
-	}
 
 	for (i = 0; i < ac; i++)
 	{
-		len = _strlen(av[i]);
-
-		for (j = 0; j < len; j++, k++)
+		for (n = 0; av[i][n]; n++)
 		{
-			p[k] = av[i][j];
+			str[k] = av[i][n];
+			k++;
 		}
-		p[k++] = '\n';
+		if (str[k] == '\0')
+		{
+			str[k++] = '\n';
+		}
 	}
-	p[k] = '\0';
-	return (p);
+	return (str);
 }
