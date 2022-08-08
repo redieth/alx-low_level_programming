@@ -12,7 +12,7 @@ int _strlen(char *s)
 
 	if (s == NULL)
 	{
-		return (length);
+		s = "";
 	}
 	else
 	{
