@@ -9,19 +9,12 @@ int _strlen(char *s)
 {
 	unsigned int length = 0;
 	int i = 0;
-
-	if (s == NULL)
+	while (s[i] != '\0')
 	{
-		s = "";
+		length++;
+		i++;
 	}
-	else
-	{
-		while (s[i] != '\0')
-		{
-			length++;
-			i++;
-		}
-	}
+	
 	return (length);
 }
 /**
@@ -39,19 +32,21 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	
 	if (s1 == NULL)
 	{
-		s1 == "";
+		s1 = "";
 		len1 = 0;
 	}
-	else{
+	else
+	{
 		len1 = _strlen(s1);
 	}
 
 	if (s2 == NULL)
 	{
-		s2 == "";
-		len2 == 0;
+		s2 = "";
+		len2 = 0;
 	}
-	else{
+	else
+	{
 		len2 = _strlen(s2);
 	}
 
