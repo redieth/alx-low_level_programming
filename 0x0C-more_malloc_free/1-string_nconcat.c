@@ -22,7 +22,7 @@ int _strlen(char *s)
 			i++;
 		}
 	}
-	return (lenght);
+	return (length);
 }
 /**
  * string_nconcat - concatenates two strings.
