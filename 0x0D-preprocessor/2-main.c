@@ -1,12 +1,9 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
  * main - main function
- * @argv: arguments
- * @argc: number of arguments
- * Return: void
+ * Return: Always 0
  */
-int main(int argc, char *argv[])
+int main(void)
 {
 	printf("%s\n", __FILE__);
 	return (0);
