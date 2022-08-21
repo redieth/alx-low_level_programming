@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "lists.h"
 /**
  * print_list - print the elements in a list.
@@ -6,16 +7,17 @@
  */
 size_t print_list(const list_t *h)
 {
-	int i;
+	size_t n = 0;
 
-	for (i = 0; h ; i++)
+	while (h)
 	{
-		if (h->str == '\0')
+		if (!h->str)
 			printf("[0] (nil)\n");
 		else
-			printf("[%i] %s\n", h->len, h->str);
+			printf("[%u] %s\n", h->len, h->str);
 		h = h->next;
+		n++;
 	}
 
-	return (i);
+	return (n);
 }
