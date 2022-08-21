@@ -1,15 +1,18 @@
+#include <stdio.h>
+#include <stdarg.h>
 #include "variadic_functions.h"
 /**
  * integer_print - print integers.
  * @args: the list of parameters
- * Return:no return a void func
+ * Return:no return a void func.
  */
 void integer_print(va_list args)
 {
 	printf("%d", va_arg(args, int));
 }
+
 /**
- * char_print - print chars.
+ * char_print - print chars
  * @args: the list of parameters
  * Return:no return a void func.
  */
@@ -17,6 +20,7 @@ void char_print(va_list args)
 {
 	printf("%c", va_arg(args, int));
 }
+
 /**
  * string_print - print strings
  * @args: the list of parameters
@@ -31,6 +35,7 @@ void string_print(va_list args)
 		s = "(nil)";
 	printf("%s", s);
 }
+
 /**
  * float_print - print floats.
  * @args: the list of parameters
@@ -40,9 +45,11 @@ void float_print(va_list args)
 {
 	printf("%f", va_arg(args, double));
 }
+
 /**
- * print_all - print char, integer, float and string
- * @format: format
+ * print_all - print anything.
+ * @format: the paramaters
+ * Return: this function no return
  */
 void print_all(const char * const format, ...)
 {
@@ -60,6 +67,7 @@ void print_all(const char * const format, ...)
 	va_start(args, format);
 	i = 0;
 	separator = "";
+
 	while (format != NULL && *(format + i) != '\0')
 	{
 		j = 0;
